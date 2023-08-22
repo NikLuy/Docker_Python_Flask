@@ -1,7 +1,7 @@
 # Docker_Python_Flask
 
-##Build 
+## Build 
 docker-compose build
 
-##Run
+## Run
 docker-compose up
