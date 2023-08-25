@@ -12,6 +12,7 @@ https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-yo
 
 
 ## Init DB
+Nur bei anpassung der Datenbank-Models ausführen
 Nach dem starten im Docker das Terminal öffnen und die folgenden Befehle ausführen. 
 
 flask db init // Nur ausführen, falls noch keine Migration vorhanden. 
