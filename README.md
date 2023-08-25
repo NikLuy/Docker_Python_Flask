@@ -9,3 +9,11 @@ docker-compose up
 ## Help 
 
 https://www.digitalocean.com/community/tutorials/how-to-add-authentication-to-your-app-with-flask-login-de
+
+
+## Init DB
+Nach dem starten im Docker das Terminal öffnen und die folgenden Befehle ausführen. 
+
+flask db init // Nur ausführen, falls noch keine Migration vorhanden. 
+flask db migrate -m "Mein Kommentar zur anpassung "
+flask db upgrade

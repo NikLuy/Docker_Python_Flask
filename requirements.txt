@@ -1,6 +1,7 @@
 flask
 flask-login
 Flask-SQLAlchemy
+Flask-Migrate
 SQLAlchemy
 mysqlclient
 pymysql
