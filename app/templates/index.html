@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World</title>
-    <!-- Include Bootstrap CSS from a CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Include your custom CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <div class="container mt-5">
-        <h1 class="display-4">Hello, World!</h1>
-        <p>This is a simple Flask app with Bootstrap styling.</p>
-        <p>Current Time: {{ current_time }}</p>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <form action="/">
-                    <div class="form-group">
-                        <label for="email">Email address:</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Flask Login Example
+</h1>
+<h2 class="subtitle">
+  Easy authentication and authorization in Flask.
+</h2>
+{% endblock %}

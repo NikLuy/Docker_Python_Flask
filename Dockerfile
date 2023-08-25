@@ -1,5 +1,11 @@
 # Use the official Python image as the base image
-FROM python:3.8-slim
+FROM python:3.11-slim
+
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y gcc default-libmysqlclient-dev pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # Set the working directory in the container
 WORKDIR /app
@@ -7,7 +13,10 @@ WORKDIR /app
 # Copy the current directory contents into the container
 COPY . /app
 
+#RUN apk update
+#RUN apk add pkgconfig
 # Install any dependencies
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Expose port 5000 for Flask

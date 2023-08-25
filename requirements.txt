@@ -1,2 +1,6 @@
 flask
+flask-login
+Flask-SQLAlchemy
+SQLAlchemy
+mysqlclient
 pymysql
